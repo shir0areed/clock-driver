@@ -87,12 +87,14 @@
     <RemoteReBuildCommandLine>make clean;make</RemoteReBuildCommandLine>
     <RemoteCleanCommandLine>make clean</RemoteCleanCommandLine>
     <RemoteBuildOutputs>clock-driver</RemoteBuildOutputs>
+    <NMakeIncludeSearchPath>/opt/vc/include/</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <RemoteBuildCommandLine>make</RemoteBuildCommandLine>
     <RemoteReBuildCommandLine>make clean;make</RemoteReBuildCommandLine>
     <RemoteCleanCommandLine>make clean</RemoteCleanCommandLine>
     <RemoteBuildOutputs>clock-driver</RemoteBuildOutputs>
+    <NMakeIncludeSearchPath>/opt/vc/include/</NMakeIncludeSearchPath>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="clock-driver.cpp" />
