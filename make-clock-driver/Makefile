@@ -1,5 +1,5 @@
 CXX = c++
-CXXFLAGS = -O4 -Wall -I/opt/vc/include
+CXXFLAGS = -g -Wall -I/opt/vc/include
 LDFLAGS = -L/opt/vc/lib
 DEST = /usr/local/bin
 LIBS = -lbcm_host -lpthread
