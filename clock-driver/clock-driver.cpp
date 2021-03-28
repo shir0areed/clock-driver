@@ -461,20 +461,12 @@ void SigHandler(int sig)
 	g_finished = 1;
 }
 
-bool SetSigHandlers()
-{
-	if(signal(SIGINT, SigHandler) == SIG_ERR)
-	{
-		printf("Failed to set SIGINT handler\n");
-		return false;
-	}
+struct SetSigHandlerFailed { int sig; };
 
-	if(signal(SIGTERM, SigHandler) == SIG_ERR)
-	{
-		printf("Failed to set SIGTERM handler\n");
-		return false;
-	}
-	return true;
+void SetSigHandler(int sig)
+{
+	if (signal(sig, SigHandler) == SIG_ERR)
+		throw SetSigHandlerFailed{ sig };
 }
 
 void SetTimeZone()
@@ -501,10 +493,10 @@ SMyValue GetMyValue()
 
 int main()
 {
-	if(!SetSigHandlers())
-		return 1;
 	try
 	{
+		SetSigHandler(SIGINT);
+		SetSigHandler(SIGTERM);
 		SetTimeZone();
 
 		CMemMap memMap;
