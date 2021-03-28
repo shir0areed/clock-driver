@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "make-clock-driver", "make-clock-driver\make-clock-driver.vcxproj", "{1268BD45-C175-4164-9ED7-42DC3218F2BD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clock-driver", "clock-driver\clock-driver.vcxproj", "{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -41,6 +43,30 @@ Global
 		{1268BD45-C175-4164-9ED7-42DC3218F2BD}.Release|x86.ActiveCfg = Release|x86
 		{1268BD45-C175-4164-9ED7-42DC3218F2BD}.Release|x86.Build.0 = Release|x86
 		{1268BD45-C175-4164-9ED7-42DC3218F2BD}.Release|x86.Deploy.0 = Release|x86
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|ARM.Build.0 = Debug|ARM
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|ARM.Deploy.0 = Debug|ARM
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|ARM64.Build.0 = Debug|ARM64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|x64.ActiveCfg = Debug|x64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|x64.Build.0 = Debug|x64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|x64.Deploy.0 = Debug|x64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|x86.ActiveCfg = Debug|x86
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|x86.Build.0 = Debug|x86
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Debug|x86.Deploy.0 = Debug|x86
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|ARM.ActiveCfg = Release|ARM
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|ARM.Build.0 = Release|ARM
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|ARM.Deploy.0 = Release|ARM
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|ARM64.ActiveCfg = Release|ARM64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|ARM64.Build.0 = Release|ARM64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|ARM64.Deploy.0 = Release|ARM64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|x64.ActiveCfg = Release|x64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|x64.Build.0 = Release|x64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|x64.Deploy.0 = Release|x64
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|x86.ActiveCfg = Release|x86
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|x86.Build.0 = Release|x86
+		{61D371AF-C280-4D1E-B2D1-0855B86E9F6E}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
