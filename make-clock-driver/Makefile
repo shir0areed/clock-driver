@@ -1,5 +1,6 @@
+OPTION = -O3
 CXX = c++
-CXXFLAGS = -g -Wall -I/opt/vc/include
+CXXFLAGS = $(OPTION) -Wall -I/opt/vc/include
 LDFLAGS = -L/opt/vc/lib
 DEST = /usr/local/bin
 LIBS = -lbcm_host -lpthread

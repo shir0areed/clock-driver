@@ -83,7 +83,7 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <RemoteBuildCommandLine>make</RemoteBuildCommandLine>
+    <RemoteBuildCommandLine>make OPTION=-g</RemoteBuildCommandLine>
     <RemoteReBuildCommandLine>make clean;make</RemoteReBuildCommandLine>
     <RemoteCleanCommandLine>make clean</RemoteCleanCommandLine>
     <RemoteBuildOutputs>clock-driver</RemoteBuildOutputs>
