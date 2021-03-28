@@ -19,6 +19,8 @@ clean:
 	rm -f *.o *~ $(PROGRAM)
 
 install: $(PROGRAM)
+	systemctl disable $(SERVICE)
+	systemctl stop $(SERVICE)
 	install -s $(PROGRAM) $(DEST)
 	install $(SERVICE) /etc/systemd/system/
 	systemctl enable $(SERVICE)
