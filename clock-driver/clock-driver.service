@@ -1,0 +1,10 @@
+[Unit]
+Description = Drive 7-segment clock display
+
+[Service]
+ExecStart = /usr/local/bin/clock-driver
+Restart = always
+RestartSec = 10
+
+[Install]
+WantedBy = multi-user.target

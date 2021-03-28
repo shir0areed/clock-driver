@@ -83,6 +83,11 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <None Include="clock-driver.service" />
+    <None Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clock-driver.cpp" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
