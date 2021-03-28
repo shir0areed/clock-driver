@@ -293,7 +293,7 @@ void CShiftRegister::Write(uint8_t value)
 		else
 			si.Clear();
 		Pulse(sck);
-		value >>= 1;
+		value = static_cast<uint8_t>(value >> 1);
 	}
 }
 
@@ -333,7 +333,7 @@ uint8_t Get7SegBits(int value)
 
 uint8_t Get7SegBitsWithPoint(int value, bool hasPoint)
 {
-	return Get7SegBits(value) & (hasPoint ? 0b11111110 : 0b11111111);
+	return static_cast<uint8_t>(Get7SegBits(value) & (hasPoint ? 0b11111110 : 0b11111111));
 }
 
 class C4Digits
@@ -446,12 +446,12 @@ CDispThread::~CDispThread()
 
 uint16_t CreateValue4(uint8_t digit12, uint8_t digit34)
 {
-	return (digit12 << 8) | digit34;
+	return static_cast<uint16_t>((digit12 << 8) | digit34);
 }
 
 uint8_t CreateValue2(int value)
 {
-	return ((value / 10) << 4) | (value % 10);
+	return static_cast<uint8_t>(((value / 10) << 4) | (value % 10));
 }
 
 static volatile sig_atomic_t g_finished = 0;
