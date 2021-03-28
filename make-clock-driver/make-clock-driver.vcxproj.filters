@@ -13,4 +13,7 @@
   <ItemGroup>
     <Text Include="Makefile" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="clock-driver.service" />
+  </ItemGroup>
 </Project>

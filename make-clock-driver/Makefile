@@ -1,11 +1,12 @@
 OPTION = -O3
 CXX = c++
-CXXFLAGS = $(OPTION) -Wall -I/opt/vc/include
-LDFLAGS = -L/opt/vc/lib
-DEST = /usr/local/bin
+CXXFLAGS = $(OPTION) -Wall -I/opt/vc/include/
+LDFLAGS = -L/opt/vc/lib/
+DEST = /usr/local/bin/
 LIBS = -lbcm_host -lpthread
 OBJS = clock-driver.o
 PROGRAM = clock-driver
+SERVICE = $(PROGRAM).service
 
 all: $(PROGRAM)
 
@@ -19,3 +20,5 @@ clean:
 
 install: $(PROGRAM)
 	install -s $(PROGRAM) $(DEST)
+	install $(SERVICE) /etc/systemd/system/
+	systemctl enable $(SERVICE)
