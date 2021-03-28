@@ -84,13 +84,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <RemoteBuildCommandLine>make</RemoteBuildCommandLine>
-    <RemoteReBuildCommandLine>make all</RemoteReBuildCommandLine>
+    <RemoteReBuildCommandLine>make clean;make</RemoteReBuildCommandLine>
     <RemoteCleanCommandLine>make clean</RemoteCleanCommandLine>
     <RemoteBuildOutputs>clock-driver</RemoteBuildOutputs>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <RemoteBuildCommandLine>make</RemoteBuildCommandLine>
-    <RemoteReBuildCommandLine>make all</RemoteReBuildCommandLine>
+    <RemoteReBuildCommandLine>make clean;make</RemoteReBuildCommandLine>
     <RemoteCleanCommandLine>make clean</RemoteCleanCommandLine>
     <RemoteBuildOutputs>clock-driver</RemoteBuildOutputs>
   </PropertyGroup>
