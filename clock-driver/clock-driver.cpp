@@ -49,7 +49,7 @@ void MaskedWrite(uint32_t* dst, uint32_t mask, uint32_t value)
 	*dst = (value & mask) | (oldValue & ~mask);
 }
 
-constexpr uint32_t CreateMask(int numBits)
+uint32_t CreateMask(int numBits)
 {
 	uint32_t ret = 0;
 	for(int i = 0; i < numBits; ++i)
