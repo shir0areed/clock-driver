@@ -18,9 +18,13 @@ $(OBJS): Makefile
 clean:
 	rm -f *.o *~ $(PROGRAM)
 
-install: $(PROGRAM)
+install: $(PROGRAM) uninstall
+	install -s $(PROGRAM) $(DEST)
+	cp $(SERVICE) /etc/systemd/system/
+	systemctl enable $(SERVICE)
+
+uninstall:
 	systemctl disable $(SERVICE) || :
 	systemctl stop $(SERVICE) || :
-	install -s $(PROGRAM) $(DEST)
-	install $(SERVICE) /etc/systemd/system/
-	systemctl enable $(SERVICE)
+	rm /etc/systemd/system/$(SERVICE) || :
+	rm $(DEST)$(PROGRAM) || :
