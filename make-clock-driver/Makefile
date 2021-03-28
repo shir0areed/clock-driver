@@ -9,8 +9,10 @@ PROGRAM = clock-driver
 
 all: $(PROGRAM)
 
-$(PROGRAM): $(OBJS)
+$(PROGRAM): Makefile $(OBJS)
 	$(CXX) $(OBJS) $(LDFLAGS) $(LIBS) -o $(PROGRAM)
+
+$(OBJS): Makefile
 
 clean:
 	rm -f *.o *~ $(PROGRAM)
