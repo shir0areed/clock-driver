@@ -1,5 +1,6 @@
 [Unit]
 Description = Drive 7-segment clock display
+After = wait-timesync.service 
 
 [Service]
 ExecStart = /usr/local/bin/clock-driver
